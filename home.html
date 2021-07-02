@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Airlines booking website</title>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "author"content = "abhinav">
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+
+ <body style="font-weight: bold;">
+     <!--current booking only to india-->
+        <b> <marquee behavior="scroll" direction="right" scrollamount="5" style="color: red;">booking currently available within india only</marquee></b>
+    
+        <center>
+        <!-- heading -->
+        <h1>Airlines Booking ✈</h1>
+        <h2> where to next ?</h2>
+        <!--form-->
+    <form method = "post" action = "submit.html">
+        <label for="fname">from : </label>
+        <input type="text" placeholder="bengaluru" id = "fname" disabled name="fname">
+        &nbsp;&nbsp;<label for="cities">destination:
+        </label>
+        <input type="text" list="cities" autofocus required>
+
+        <datalist id="cities">
+            <option value="chennai">
+            <option value="delhi">
+            <option value="mumbai">
+            <option value="hydrabad">
+        </datalist>
+        &nbsp;&nbsp;<b><label for="date">departure: </label></b>
+        <input type="date" min="2021-07-02" max="2021-08-02" value="2021-07-02" required>
+
+    
+<br>
+<br>
+    
+        <table cellspacing = "10">
+            <tr>
+                <td><label for="fname">your name: </label></td>
+                <td><input type="text" placeholder = "wilson smith" id="fname" name="first_name" required><br></td>
+            </tr>
+            <tr>
+                <td><label for="fname">email: </label></td>
+                <td><input type="text" placeholder = "example@mail.com" required id="fname" name="first_name"><br></td>
+            </tr>
+        </table><br>
+       
+        <input type="radio" name="gender" value = "male" checked>male &nbsp;
+        <input type="radio" name="gender" value = "female">female  &nbsp;
+        <input type="radio" name="gender" value = "others">others
+        <br><br><input type="submit" value="book ticket">
+
+    </form>
+
+    </center>
+ </body>
+
+</html>
